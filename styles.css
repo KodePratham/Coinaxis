@@ -1,0 +1,220 @@
+/* Reset and Global Styles */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    background-color: #121212;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+/* Header Section */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1e1e1e; /* Matches dark theme */
+  padding: 20px 40px; /* Adds padding for a box feel */
+  margin: 20px auto; /* Centers the header with spacing */
+  width: 80%; /* Restricts the width */
+  border: 2px solid #aeaeae; /*  border */
+  border-radius: 10px; /* Rounded corners for modern design */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Adds shadow for elevation */
+}
+
+/* Logo (Website Name) */
+.logo01 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+/* Navigation Links */
+.nav01 {
+  display: flex;
+  gap: 20px; /* Space between navigation items */
+}
+
+.nav01 a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.nav01 a:hover {
+  color: #f2ff00; /* Green on hover */
+}
+
+  
+  /* Hero Section */
+.hero01 {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 20px; /* Increased vertical padding */
+    gap: 40px; /* Added space between left and right sections */
+  }
+  
+  .left-section01,
+  .right-section01 {
+    width: 48%;
+    background-color: #1e1e1e;
+    padding: 30px; /* Increased internal padding for sections */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 2px solid #aeaeae; /*  border */
+  }
+  
+  .left-section01 ul li,
+  .right-section01 ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; /* Increased space between list items */
+  }
+  
+  .left-section01 ul li img,
+  .right-section01 ul li img {
+    width: 40px; /* Slightly larger icons */
+    height: 40px;
+    margin-right: 15px; /* Increased spacing between icon and text */
+  }
+
+/* Winning Percentage with Up Arrow */
+.winning-percentage01 {
+  color: #28f728; /* Green for positive changes */
+  font-weight: bold;
+  margin-left: 10px;
+  font-size: 1rem;
+}
+
+/* Text and Button Section */
+.text-button-section02 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1e1e1e; /* Matches the dark mode theme */
+  padding: 30px 40px; /* Increased padding for a box-like feel */
+  margin: 10px auto; /* Centers the section and adds space above and below */
+  width: 80%; /* Restricts width to create a boxed appearance */
+  border: 2px solid #aeaeae; /* Adds a border */
+  border-radius: 10px; /* Rounds the corners for a modern look */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Adds a soft shadow */
+}
+
+/* Text Container */
+.text-container02 {
+  color: #ffffff; /* White text for visibility */
+  font-family: 'Arial', sans-serif; /* Professional and clean font */
+}
+
+.main-text02 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0; /* Removes default margins */
+}
+
+.sub-text02 {
+  font-size: 1rem;
+  margin-top: 5px; /* Adds slight spacing below the main text */
+  color: #aaaaaa; /* Subtle grey for subtext */
+}
+
+/* Button Container */
+.button-container02 {
+  display: flex;
+  align-items: center;
+}
+
+.test-market-button02 {
+  background-color: #f2ff00; /* Bright green for prominence */
+  color: #000000; /* Black text for contrast */
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.test-market-button02:hover {
+  background-color: #c3c901; /* Darker green on hover */
+  color: #ffffff; /* White text for better contrast */
+}
+
+/* Top Crypto Section */
+.top-crypto-section03 {
+  background-color: #1e1e1e; /* Dark background */
+  padding: 30px;
+  margin: 40px auto;
+  width: 80%;
+  border: 2px solid #aaaaaa; /* Green border for main box */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Shadow for box effect */
+  text-align: center;
+}
+
+.section-title03 {
+  color: #ffffff;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Table Styling */
+.crypto-table03 {
+  width: 100%;
+  border-collapse: collapse;
+  color: #ffffff;
+  font-family: 'Arial', sans-serif;
+  margin-top: 10px;
+  
+}
+
+.crypto-table03 th,
+.crypto-table03 td {
+  padding: 12px;
+  text-align: left; /* Align content to the left */
+}
+
+.crypto-table03 th {
+  background-color: #2a2a2a; /* Darker header background */
+  font-weight: bold;
+}
+
+.crypto-table03 tr:nth-child(even) {
+  background-color: #2a2a2a; /* Alternating row color */
+}
+
+.crypto-table03 tr:nth-child(odd) {
+  background-color: #242424;
+}
+
+.crypto-table03 td .positive-change03 {
+  color: #00ff00; /* Green for positive changes */
+}
+
+.crypto-table03 td .negative-change03 {
+  color: #ff3333; /* Red for negative changes */
+}
+
+.crypto-logo-name03 {
+  display: flex;
+  align-items: center;
+}
+
+.crypto-logo-name03 img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}

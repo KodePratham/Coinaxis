@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoinAxis</title>
+    <link rel="stylesheet" href="list.css">
+</head>
+<body>
+    <header>
+        <h1>CoinAxis</h1>
+        <div id="search-container">
+            <input type="text" id="search-bar" placeholder="Search for a crypto...">
+            <button id="search-btn" onclick="searchCrypto()">🔍 Search</button>
+        </div>
+    </header>
+
+    <section id="searched-coin-section">
+        <h2>Featured Coin (No Dynamic Price Changes)</h2>
+        <div id="searched-coin"></div>
+    </section>
+
+
+
+    <section id="my-list-section">
+        <h2>My List</h2>
+        <div id="alert-container">
+            <input type="email" id="emailInput" placeholder="Enter your email" required>
+        <button onclick="sendEmail()">Get Alerts</button>
+        </div>
+        
+        <div id="my-list"></div>
+    </section>
+
+    <section id="winners-section">
+        <h2>24-Hour Winners</h2>
+        <div id="winners-list"></div>
+    </section>
+
+    <section id="top-100-section">
+        <h2>Top 100 Cryptos</h2>
+        <div id="crypto-list"></div>
+    </section>
+
+
+
+            <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "dZjFKcVTnuzfAOI3K",
+      });
+   })();
+</script>
+            <script src="list.js"></script>
+            
+    <script>
+      emailjs.init("dZjFKcVTnuzfAOI3K");
+    </script>
+    
+</body>
+</html>

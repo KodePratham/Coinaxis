@@ -1,64 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CoinAxis</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CoinAxis</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>CoinAxis</h1>
-        <div id="search-container">
-            <input type="text" id="search-bar" placeholder="Search for a crypto...">
-            <button id="search-btn" onclick="searchCrypto()">🔍 Search</button>
-        </div>
-    </header>
+  <!-- Header Section -->
+  <header class="header01">
+    <div class="logo01">CoinAxis</div>
+    <nav class="nav01">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="list.html">Lists</a>
+      <a href="exchange.html">Market</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
 
-    <section id="searched-coin-section">
-        <h2>Featured Coin (No Dynamic Price Changes)</h2>
-        <div id="searched-coin"></div>
-    </section>
+  <!-- Hero Section -->
+  <main class="hero01">
+    <div class="left-section01">
+      <h2>Top 5 Cryptocurrencies</h2>
+      <ul class="top-cryptos01"></ul>
+    </div>
+    <div class="right-section01">
+      <h2>24-Hour Winners</h2>
+      <ul class="top-winners01"></ul>
+    </div>
+  </main>
 
-
-
-    <section id="my-list-section">
-        <h2>My List</h2>
-        <div id="alert-container">
-            <input type="email" id="emailInput" placeholder="Enter your email" required>
-        <button onclick="sendEmail()">Get Alerts</button>
-        </div>
-        
-        <div id="my-list"></div>
-    </section>
-
-    <section id="winners-section">
-        <h2>24-Hour Winners</h2>
-        <div id="winners-list"></div>
-    </section>
-
-    <section id="top-100-section">
-        <h2>Top 100 Cryptos</h2>
-        <div id="crypto-list"></div>
-    </section>
-
+  <section class="text-button-section02">
+    <div class="text-container02">
+      <h1 class="main-text02">AXIS MARKET</h1>
+      <p class="sub-text02">Do Crypto Trades for 0$</p>
+    </div>
+    <div class="button-container02">
+     <a href="exchange.html"> <button class="test-market-button02">Market Simulation</button> </a>
+    </div>
+  </section>
 
 
-            <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-</script>
-<script type="text/javascript">
-   (function(){
-      emailjs.init({
-        publicKey: "dZjFKcVTnuzfAOI3K",
-      });
-   })();
-</script>
-            <script src="script.js"></script>
-            
-    <script>
-      emailjs.init("dZjFKcVTnuzfAOI3K");
-    </script>
-    
+  <section class="top-crypto-section03">
+    <h2 class="section-title03">Cryptocurrencies To Watch</h2>
+    <div class="table-container03">
+      <table class="crypto-table03">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Crypto</th>
+            <th>Price (USD)</th>
+            <th>1-Day Change</th>
+          </tr>
+        </thead>
+        <tbody id="crypto-table-body03">
+          <!-- Rows will be dynamically populated -->
+        </tbody>
+      </table>
+    </div>
+  </section>
+  
+  
+
+  <!-- Script to Fetch Data -->
+  <script src="script.js"></script>
 </body>
 </html>

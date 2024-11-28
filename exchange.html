@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simulated Crypto Exchange</title>
+  <link rel="stylesheet" href="exchange.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">Coinaxis Exchange</div>
+    <nav>
+      <a href="#buy-section">Buy</a>
+      <a href="#sell-section">Sell</a>
+      <a href="#portfolio-section">Portfolio</a>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Overview Section -->
+    <section class="overview">
+      <div class="balance">
+        <h2>Total USDT Balance</h2>
+        <p id="usdt-balance">100,000 USDT</p>
+      </div>
+      <div class="portfolio-worth">
+        <h2>Portfolio Worth</h2>
+        <p id="portfolio-worth">100,000 USDT</p>
+      </div>
+    </section>
+
+    <!-- Trading Section -->
+    <section id="buy-section" class="trading-section">
+      <h2>Buy Crypto</h2>
+      <div class="trade-box">
+        <label for="crypto-search">Search Crypto</label>
+        <input type="text" id="crypto-search" placeholder="Enter crypto name or symbol...">
+        <div id="crypto-results" class="crypto-list"></div>
+      </div>
+    </section>
+
+    <section id="sell-section" class="trading-section">
+      <h2>Sell Crypto</h2>
+      <div class="trade-box">
+        <label for="sell-crypto">Select Crypto</label>
+        <select id="sell-crypto">
+          <option value="">-- Your Owned Crypto --</option>
+          <!-- Dynamically populated -->
+        </select>
+        <label for="sell-amount">Amount to Sell</label>
+        <input type="number" id="sell-amount" placeholder="Enter amount">
+        <button id="sell-button">Sell</button>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio-section" class="portfolio-section">
+      <h2>Your Portfolio</h2>
+      <div id="portfolio" class="crypto-list">
+        <!-- Dynamically populated -->
+      </div>
+    </section>
+
+<!-- Trending Section -->
+<section id="trending-section">
+  <h2>Trending Coins</h2>
+  <div id="trending-coins" class="trending-grid"></div>
+</section>
+
+
+
+
+  <script src="exchange.js"></script>
+</body>
+</html>
